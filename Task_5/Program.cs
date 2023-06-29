@@ -11,11 +11,22 @@ namespace Task_5
         static void Main()
         {
 
+            var manager = new Manager();
+            var programmer = new Programmer();
+            var director = new Director();
 
 
+            SystemController.Сheck(manager);
+            SystemController.Сheck(programmer);
+            SystemController.Сheck(director);
 
+            Console.WriteLine();
 
+            SystemController.SecretDepartment(manager);
+            SystemController.SecretDepartment(programmer);
+            SystemController.SecretDepartment(director);
 
+            Console.ReadKey();
         }
     }
 }
